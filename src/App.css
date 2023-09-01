@@ -8,7 +8,17 @@
   color: rgb(4, 15, 59);
 }
 
+.section h1{
+  font-size: 5em;
+  margin: 10px 0;
+  word-spacing: 8px;
+  letter-spacing: 8px;
+}
+
 .Header {
+  position: absolute;
+  top: -23vh;
+  left: -35vh;
   width: 100%;
   padding: 20px 10.5%;
   margin: 0px auto;
@@ -16,15 +26,69 @@
 }
 
 #canvas {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: -25vh;
   left: 0;
-  width: 100%;
-  height: 700px;
+  width: 200%;
+  translate: -25% 0;
+  height: 100vh;
   pointer-events: none;
   z-index: -2;
 }
 
+#sunCanvas {
+  position: absolute;
+  top: -23vh;
+  left: 120vh;
+  z-index: -1;
+  width: 85px;
+  border-radius: 50%;
+}
+
+.sun:hover {
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: -11vh;
+  left: 111vh;
+  /* display: none; */
+  z-index: 1;
+}
+
+.dropdown-content {
+  border-right: 2px solid #bfbfbf;
+  background-color: white;
+  margin: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.dropdown-content.open {
+  max-height: 200px; /* adjust as necessary */
+}
+
+.dropdown-content button{
+  font-size: large;
+  background: none;
+  border: none;
+  color: #007BFF;
+  cursor: pointer;
+  padding: 10px;
+  text-align: right;
+  width: 120px;
+}
+
+.button-text:hover {
+  text-decoration: underline;
+}
+
+.cdot {
+  /* color: gray; */
+  padding-left: 10px; /* Adjust as necessary */
+}
 
 .Header img {
   width: 50px;
@@ -34,10 +98,11 @@
   margin: auto;
   width: 50%;
   background-color: white;
+  position: relative;
 }
 
 .section {
-  margin: 50px auto;
+  margin: 80px auto;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
   border-radius: 18px;
   padding: 30px;
@@ -45,7 +110,7 @@
 
 .top-section {
   background-color: rgb(255,255,255, 0.4);
-  margin: 15vh auto 35vh auto;
+  margin: 25vh auto 40vh auto;
   height: 40%;
 }
 

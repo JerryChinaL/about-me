@@ -5,14 +5,32 @@ import Projects from './Projects.js';
 import Courses from './Courses.js';
 import logo from './logojl.png';
 function App() {
+  const handleScroll = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+  const toggleDropdown = () => {
+    document.getElementById('dropdown-content').classList.toggle('open');
+  }
   return (
     <div className="App">
       {/* <canvas id="canvas"></canvas> */}
-      <div className="Header">
+      {/* <div className="Header">
         <img src={logo} className="Logo" alt="logo" />
-      </div>
+      </div> */}
       <div className='top-section'>
         <canvas id="canvas"></canvas>
+        <canvas id="sunCanvas" className='sun' onClick={toggleDropdown}></canvas>
+        <div id="dropdown" className="dropdown">
+          <div id="dropdown-content" className="dropdown-content">
+            <button className='dropdown-buttons' onClick={() => handleScroll('personalinfo')}><span className="button-text">About Me</span><span className="cdot">•</span></button>
+            <button className='dropdown-buttons' onClick={() => handleScroll('projects')}><span className="button-text">Projects</span><span className="cdot">•</span></button>
+            <button className='dropdown-buttons' onClick={() => handleScroll('courses')}><span className="button-text">Courses</span><span className="cdot">•</span></button>
+
+          </div>
+        </div>
+        <div className="Header">
+          <img src={logo} className="Logo" alt="logo" />
+        </div>
         <h1 className="Title">Hi,</h1>
         <h1 className="Title">I'm Jerry,</h1>
         <h1 className="sub-Title">Third Year @UChicago</h1>

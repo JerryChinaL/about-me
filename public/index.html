@@ -51,10 +51,10 @@
       // Function to create rain drops
       function createRainDrops() {
         const x = Math.random() * canvas.width;
-        const y = canvas.height;
+        const y = (Math.random() / 2 + 0.5) * canvas.height;
         const speed = Math.random() * 2 + 1;
-        const length = Math.random() * 20 + 10;
-        const opacity = Math.random() * 0.5 + 0.3;
+        const length = Math.random() * 25 + 1;
+        const opacity = (length - 10) / 25 * 0.5 + 0.2;
         const isOrange = Math.random() < 0.03; // Adjust this value as needed
         const color = isOrange ? 'rgba(255,153,0,0.8)' : 'rgba(174,194,224,0.5)';
         rainDrops.push({ x, y, speed, length, opacity, color });
@@ -63,7 +63,7 @@
       // Function to draw rain drops
       function drawRainDrops() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.lineWidth = 2;
+        ctx.lineWidth = 4;
         for (let i = 0; i < rainDrops.length; i++) {
           const { x, y, length, opacity, color } = rainDrops[i];
           ctx.strokeStyle = color;
@@ -100,6 +100,65 @@
     // Create rain effect when window is loaded
     window.addEventListener('load', createRainEffect);
   </script>
+
+  <script>
+    // Function to create sun with rotating rays and flower leaf-like shapes
+    function createSunEffect() {
+      const sunCanvas = document.getElementById('sunCanvas');
+      const ctx = sunCanvas.getContext('2d');
+      const dropdown = document.getElementById('dropdown');
+      sunCanvas.width = 200;
+      sunCanvas.height = 200;
+
+      const centerX = sunCanvas.width / 2;
+      const centerY = sunCanvas.height / 2;
+      const radius = 20;
+      const numRays = 12;
+      const rayLength = 80;
+      let rotation = 0;
+      
+      // Function to draw sun
+      function drawSun() {
+        ctx.clearRect(0, 0, sunCanvas.width, sunCanvas.height);
+
+        // Draw circle
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius - 15, 0, 2 * Math.PI);
+        ctx.fillStyle = 'rgb(250, 150, 0, 50)';
+        ctx.fill();
+
+        // Draw rays
+        for (let i = 0; i < numRays; i++) {
+          const angle = (i * 2 * Math.PI / numRays) + rotation;
+          const x = centerX + Math.cos(angle) * (radius + rayLength) / 2;
+          const y = centerY + Math.sin(angle) * (radius + rayLength) / 2;
+          const leafRadius = 20;
+          const leafX = centerX + Math.cos(angle) * (radius + rayLength / 2.5);
+          const leafY = centerY + Math.sin(angle) * (radius + rayLength / 2.5);
+          ctx.beginPath();
+          ctx.arc(leafX, leafY, leafRadius, angle - Math.PI / 4, angle + Math.PI / 4);
+          ctx.fillStyle = 'orange';
+          ctx.fill();
+          ctx.beginPath();
+          ctx.arc(leafX, leafY, leafRadius, angle + Math.PI / 4, angle + 3 * Math.PI / 4);
+          ctx.fill();
+        }
+      }
+
+      // Function to animate sun
+      function animateSun() {
+        drawSun();
+        rotation += 0.01;
+        requestAnimationFrame(animateSun);
+      }
+
+      animateSun();
+    }
+
+    // Create sun effect when window is loaded
+    window.addEventListener('load', createSunEffect);
+  </script>
+
 
 </body>
 
