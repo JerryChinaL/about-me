@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="../src/logojl.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="../src/logojl.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobilef device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Jerry Liu's Intro</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script>
+    // Function to create rain effect
+    function createRainEffect() {
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const rainDrops = [];
+
+      // Function to create rain drops
+      function createRainDrops() {
+        const x = Math.random() * canvas.width;
+        const y = canvas.height;
+        const speed = Math.random() * 2 + 1;
+        const length = Math.random() * 20 + 10;
+        const opacity = Math.random() * 0.5 + 0.3;
+        const isOrange = Math.random() < 0.03; // Adjust this value as needed
+        const color = isOrange ? 'rgba(255,153,0,0.8)' : 'rgba(174,194,224,0.5)';
+        rainDrops.push({ x, y, speed, length, opacity, color });
+      }
+
+      // Function to draw rain drops
+      function drawRainDrops() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.lineWidth = 2;
+        for (let i = 0; i < rainDrops.length; i++) {
+          const { x, y, length, opacity, color } = rainDrops[i];
+          ctx.strokeStyle = color;
+          ctx.beginPath();
+          ctx.moveTo(x, y);
+          ctx.lineTo(x, y + length);
+          ctx.globalAlpha = opacity;
+          ctx.stroke();
+        }
+      }
+
+      // Function to update rain drops
+      function updateRainDrops() {
+        for (let i = 0; i < rainDrops.length; i++) {
+          rainDrops[i].y -= rainDrops[i].speed;
+          if (rainDrops[i].y > canvas.height) {
+            rainDrops.splice(i, 1);
+            i--;
+          }
+        }
+      }
+
+      // Function to animate rain drops
+      function animateRainDrops() {
+        createRainDrops();
+        drawRainDrops();
+        updateRainDrops();
+        requestAnimationFrame(animateRainDrops);
+      }
+
+      animateRainDrops();
+    }
+
+    // Create rain effect when window is loaded
+    window.addEventListener('load', createRainEffect);
+  </script>
+
+</body>
+
+</html>

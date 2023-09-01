@@ -1,0 +1,17 @@
+.Projects {
+    padding: 20px;
+}
+
+.Projects h2 {
+    margin-bottom: 10px;
+}
+
+.Projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Projects li {
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
