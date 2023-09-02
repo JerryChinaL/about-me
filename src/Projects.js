@@ -6,7 +6,6 @@ import dbms from './img/dbms.png';
 import panda from './img/accuracy.png';
 import house from './img/hp.png';
 import calor from './img/calor.png';
-import rabbit from './img/rabbit.png';
 import auth0 from './img/auth0.png';
 function Projects() {
     return (

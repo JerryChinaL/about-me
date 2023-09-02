@@ -87,7 +87,7 @@ function App() {
       </div>
 
       <div className='footer'>
-        <h4>© Jerry Liu 2021</h4>
+        <h4>© Jerry Liu 2023</h4>
         <h4>Designed by Jerry Liu</h4>
       </div>
     </div>
