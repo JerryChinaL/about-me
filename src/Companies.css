@@ -1,0 +1,53 @@
+.CompaniesWorkedWith {
+    padding: 20px;
+}
+
+.companies {
+    display: flex;
+    /* wrap */
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.companies h2 {
+    margin-bottom: 10px;
+}
+
+.company-item {
+    text-align: center;
+    width: 25%;
+    margin: 20px;
+}
+
+.company-item img {
+    width: 100px;
+    /* adjust as necessary */
+    height: 100px;
+    /* adjust as necessary */
+}
+
+.company-item p {
+    margin-top: 10px;
+}
+
+.company-item {
+    transform: translateX(-100%);
+    transition: transform 1s;
+}
+
+.company-item.visible {
+    transform: translateX(0);
+}
+
+
+
+.footer {
+    text-align: center;
+    padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .company-item {
+        margin:10px auto;
+        width: 40%;
+    }
+}

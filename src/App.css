@@ -8,11 +8,11 @@
   color: rgb(4, 15, 59);
 }
 
-.section h1{
-  font-size: 5em;
+.section h1 {
+  font-size: 2.5em;
   margin: 10px 0;
-  word-spacing: 8px;
-  letter-spacing: 8px;
+  word-spacing: 6px;
+  letter-spacing: 6px;
 }
 
 .Header {
@@ -29,8 +29,8 @@
   position: absolute;
   top: -25vh;
   left: 0;
-  width: 200%;
-  translate: -25% 0;
+  width: 180%;
+  translate: -23% 0;
   height: 100vh;
   pointer-events: none;
   z-index: -2;
@@ -39,10 +39,24 @@
 #sunCanvas {
   position: absolute;
   top: -23vh;
-  left: 120vh;
+  left: 110%;
   z-index: -1;
   width: 85px;
   border-radius: 50%;
+}
+
+#menu {
+  position: absolute;
+  top: -21.7vh;
+  left: -10px;
+  width: 100%;
+  padding: 20px 10.5%;
+  margin: 0px auto;
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 500;
+  z-index: -4;
 }
 
 .sun:hover {
@@ -52,7 +66,7 @@
 .dropdown {
   position: absolute;
   top: -11vh;
-  left: 111vh;
+  left: 100%;
   /* display: none; */
   z-index: 1;
 }
@@ -67,10 +81,11 @@
 }
 
 .dropdown-content.open {
-  max-height: 200px; /* adjust as necessary */
+  max-height: 200px;
+  /* adjust as necessary */
 }
 
-.dropdown-content button{
+.dropdown-content button {
   font-size: large;
   background: none;
   border: none;
@@ -87,29 +102,41 @@
 
 .cdot {
   /* color: gray; */
-  padding-left: 10px; /* Adjust as necessary */
+  padding-left: 10px;
+  /* Adjust as necessary */
 }
 
 .Header img {
   width: 50px;
 }
 
-.section, .top-section {
+.contact {
+  margin: 100px 0 0 0;
+  font-size: 18px;
+  color: #717171;
+  width: 100%;
+  text-align: center;
+  background-color: #ffffffcc;
+}
+
+.section,
+.top-section {
   margin: auto;
-  width: 50%;
+  width: 55%;
   background-color: white;
   position: relative;
+
 }
 
 .section {
   margin: 80px auto;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.1);
   border-radius: 18px;
   padding: 30px;
 }
 
 .top-section {
-  background-color: rgb(255,255,255, 0.4);
+  background-color: rgb(255, 255, 255, 0.8);
   margin: 25vh auto 40vh auto;
   height: 40%;
 }
@@ -129,25 +156,127 @@
 }
 
 .Intro {
-  text-indent: 45px;
+  text-indent: 28px;
   margin: 20px 0;
   font-size: 18px;
   color: rgb(4, 15, 59);
   line-height: 1.5;
 }
 
-.Links {
+.me-photo {
+  width: 40%;
+}
+
+.text {
+  width: 55%;
+}
+
+.me-photo {
+  text-align: center;
+  padding: 20px;
+}
+
+.me-photo img {
+  width: 220px;
+  height: auto;
+}
+
+#personalinfo {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.Links a {
-  margin: 50px 50px;
-  color: #61dafb;
-  text-decoration: none;
+.arrow-container {
+  position: absolute;
+  bottom: -30vh;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.Links a:hover {
-  text-decoration: underline;
+.arrow-down {
+  width: 30px;
+  height: 30px;
+  border: solid 5px #636363;
+  border-top: transparent;
+  border-right: transparent;
+  margin: 0 auto;
+  animation: bounce 2s infinite;
+}
+
+.back-to-top {
+  position: fixed;
+  left: 93%;
+  bottom: 7%;
+  background-color: #000000dd;
+  padding: 16px 12px;
+  padding-bottom: 6px;
+  cursor: pointer;
+  border: 0;
+  display: none;
+}
+
+.arrow-up {
+  width: 15px;
+  height: 15px;
+  border: solid 4px #ffffff;
+  border-top: transparent;
+  border-right: transparent;
+  margin: 0 auto;
+  rotate: 135deg;
+}
+
+.back-to-top.visible {
+  display: block;
+}
+
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0) rotate(-45deg);
+  }
+
+  40% {
+      transform: translateY(-30px) rotate(-45deg);
+  }
+
+  60% {
+      transform: translateY(-15px) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .section,
+  .top-section {
+    width: 80%;
+  }
+
+  .section h1{
+    font-size: 2em;
+  }
+
+  .Title {
+    font-size: 2.5em;
+  }
+
+  .sub-Title {
+    font-size: 1.5em;
+  }
+
+  .Intro {
+    font-size: 16px;
+  }
+
+  .section h2 {
+    font-size: 1.3em;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .back-to-top {
+    display: none;
+  }
 }

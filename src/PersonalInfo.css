@@ -1,8 +1,14 @@
 .PersonalInfo {
     padding: 20px;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
+    width: 100%;
 }
 
 .PersonalInfo h2 {
     margin-bottom: 10px;
+}
+
+.PersonalInfo p {
+    line-height: 20px;
+    word-spacing: 2px;
 }
