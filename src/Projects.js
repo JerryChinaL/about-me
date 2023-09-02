@@ -14,36 +14,36 @@ function Projects() {
             <h2>Programming</h2>
             <div className="software-projects">
                 <div className="project-item">
-                    <h4>Email Networking System</h4>
                     <a href="https://alphamail.world">
                         <img src={am} alt="Project 1" />
                     </a>
+                    <h4>Email Networking System</h4>
                     <ul>
                         <li>Addresses the problems that networking emails sent by popular email marketing tools often gets rejected by company servers.</li>
                         <li>Designed React JS frontend and Express backend, incorporating MongoDB, Stripe APIs for data storage and payment processing.</li>
                     </ul>
                 </div>
                 <div className="project-item">
-                    <h4> Database Management System</h4>
                     <img src={dbms} alt="Project 1" />
+                    <h4> Database Management System</h4>
                     <ul>
                         <li>Developed key components of a database management system in Rust, including heap-store for reduced I/O cost and operators such as hash join and aggregate for efficient query processing</li>
                         <li>Showcased proficiency in relational databases, query optimization, and executing SQL queries with Python.</li>
                     </ul>
                 </div>
                 <div className="project-item">
-                    <h4> User Authentication & Access with Auth0</h4>
                     <img src={auth0} alt="Project 4" />
+                    <h4> User Authentication & Access with Auth0</h4>
                     <ul>
                         <li>Developed three web app prototypes featuring multi-factor authentication (MFA), biometric login, and role-based access controls using React and Auth0.</li> <li> Enhanced security and user experience, and facililating complex integration with institutions like schools and hospitals</li>
                         <li>Code Owned by Company</li>
                     </ul>
                 </div>
                 <div className="project-item">
-                    <h4> Website for Springer Capital</h4>
                     <a href="https://www.springer.capital">
                         <img src={springer} alt="Project 3" />
                     </a>
+                    <h4> Website for Springer Capital</h4>
                     <ul>
                         <li>Developed entire  website for Springer Capital during internship with HTML/CSS and published to Godaddy domain.</li>
                         <li>Managed shared Github repository, virtual machines, cloud backup, and Amazon AWS instances.</li>
@@ -62,10 +62,10 @@ function Projects() {
             <h2>Science & Research</h2>
             <div className="software-projects">
                 <div className="project-item">
-                    <h4> Data Analysis of High-granularity Calorimeters @ Fermilab</h4>
                     <a href="https://github.com/JerryChinaL/Portfolio/blob/main/Adversarial%20Attack%20Paper.pdf">
                         <img src={calor} alt="Project 3" />
                     </a>
+                    <h4> Data Analysis of High-granularity Calorimeters @ Fermilab</h4>
                     <ul>
                         <li>Worked with experimental particle physicists to improve calorimeter data analysis for future colliders.</li>
                         <li>Used gradient-boosted trees and neural networks to predict true particle distribution based on calorimeter detections, improving detector resolution by 50% compared to existing clustering method.</li>
@@ -73,20 +73,20 @@ function Projects() {
                     </ul>
                 </div>
                 <div className="project-item">
-                    <h4> Adversarial Training on CNN</h4>
                     <a href="https://github.com/JerryChinaL/Portfolio/blob/main/Adversarial%20Attack%20Paper.pdf">
                         <img src={panda} alt="Project 1" />
                     </a>
+                    <h4> Adversarial Training on CNN</h4>
                     <ul>
                         <li>Researched performance of adversarial training on a CNN that identifies banknote images for visually impaired. Paper published in an ACM Journal.</li>
                         <li>Learned about different types of adversarial attacks & defense mechanisms that improve the model robustness against malicious adversarial attacks.</li>
                     </ul>
                 </div>
                 <div className="project-item">
-                    <h4>Kaggle House Price Prediction</h4>
                     <a href="https://github.com/JerryChinaL/Portfolio/blob/main/House_Price_paper.pdf">
                         <img src={house} alt="Project 1" />
                     </a>
+                    <h4>Kaggle House Price Prediction</h4>
                     <ul>
                         <li>Wrote detailed solution of using kernel ridge, gradient boosting, lasso, and other relevant algorithms to predict house prices, based on 50+ house features.</li>
                         <li>Performed feature engineering, data normalization, grid search of parameters, etc. Ranked in the top 4%. </li>
