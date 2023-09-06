@@ -127,7 +127,7 @@ body {
 .top-section {
   margin: auto;
   width: 55%;
-  background-color: white;
+  /* background-color: white; */
   position: relative;
   min-height: fit-content;
 
