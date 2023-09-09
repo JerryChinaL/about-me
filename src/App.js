@@ -58,7 +58,7 @@ function App() {
         <h1 className="Title">I'm Jerry,</h1>
         <h1 className="sub-Title">Third Year Undergrad @UChicago</h1>
         <p className="Intro">Welcome to my homepage. I am  majoring in Computer Science, Math, and Statistics. I've explored data analysis, AI, trading and software engineering. My goal is to keep contributing to the <b>tech</b> community, by being kind, thoughtful, and cool.</p>
-        <p className='contact'>Contact Me via: <a href='https://linkedin.com/in/jerryliucn'>LinkedIn</a> , <a href='https://drive.google.com/drive/folders/1RCk1Or4wxFAisri7K-BrT8NfZ99CWTzX?usp=sharing'>Resume</a> , <a href='lhy0518@uchicago.edu'>lhy0518@uchicago.edu</a></p>
+        <p className='contact'>Contact Me via: <a href='https://linkedin.com/in/jerryliucn'>LinkedIn</a> , <a href='https://drive.google.com/drive/folders/1RCk1Or4wxFAisri7K-BrT8NfZ99CWTzX?usp=sharing'>Resume</a> , <a href='https://github.com/JerryChinaL'>Github</a> , <a href='lhy0518@uchicago.edu'>lhy0518@uchicago.edu</a> </p>
         <div className='arrow-container'>
           <div className='arrow-down'></div>
         </div>

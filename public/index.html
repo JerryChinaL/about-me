@@ -51,16 +51,19 @@
       // Function to create rain drops
       function createRainDrops() {
         const x = Math.random() * canvas.width;
-        const y = (Math.random() / 2 + 0.5) * canvas.height;
-        const speed = Math.random() * 1 + 1;
-        const radius = Math.random() * 20 + 15;
-        const opacity = (length - 10) / 25 * 0.1 + 0.2;
+        const y = canvas.height;
+        const speed = Math.random() * 5 + 2;
+        const radius = Math.random() * 10 + 20;
+        const opacity = (length - 10) / 25 * 0.1 + 0.4;
         const colorProbability = Math.random();
-        const color =
-          colorProbability < 0.03 ? 'rgba(255,153,0,1)' : // Amazon Orange
-            colorProbability < 0.06 ? 'rgba(15,157,88,1)' : // Google Blue
-              colorProbability < 0.1 ? 'rgba(188,68,55,1)' : // Google Red
-                'rgba(66,153,244,0.7)'; // Some other color
+        const r = Math.random() * 255;
+        const g = Math.random() * 255;
+        const b = Math.random() * 255;
+        const color = 'rgba(' + r + ',' + g + ',' + b + ',0.7)';
+          // colorProbability < 0.03 ? 'rgba(255,153,0,1)' : // Amazon Orange
+          //   colorProbability < 0.06 ? 'rgba(15,157,88,1)' : // Google Blue
+          //     colorProbability < 0.1 ? 'rgba(188,68,55,1)' : // Google Red
+          //       'rgba(66,153,244,0.7)'; // Some other color
 
         rainDrops.push({ x, y, speed, radius, opacity, color });
       }
@@ -93,7 +96,7 @@
       // Function to animate rain drops
       // Function to animate rain drops
       function animateRainDrops() {
-        if (Math.random() < 0.03) { // 10% chance to create a new raindrop each frame
+        if (Math.random() < 0.1) { // 10% chance to create a new raindrop each frame
           createRainDrops();
         }
         drawRainDrops();

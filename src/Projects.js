@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects.css';
-import am from './img/amlong.png';
+import am from './img/amfix.png';
 import springer from './img/springer1.png';
 import dbms from './img/dbms.png';
 import panda from './img/accuracy.png';

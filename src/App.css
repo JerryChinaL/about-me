@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(238, 238, 238);
+  background-color: #fff;
 }
 
 .App {
@@ -115,7 +115,7 @@ body {
 }
 
 .contact {
-  padding-top: 8%;
+  padding-top: 2%;
   font-size: 18px;
   color: #717171;
   width: 100%;
@@ -137,9 +137,12 @@ body {
    /* no background color */
    padding: 30px;
    border-radius: 20px;
-   background-color: rgb(238, 238, 238, 0.6);
+   background-color: rgb(238, 238, 238, 1);
 }
 
+.contact {
+  background-color: rgb(238, 238, 238, 1);
+}
 
 
 .section {
