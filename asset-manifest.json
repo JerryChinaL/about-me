@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/about-me/static/css/main.1a4ca843.css",
-    "main.js": "/about-me/static/js/main.2620945b.js",
+    "main.css": "/about-me/static/css/main.a6edaf75.css",
+    "main.js": "/about-me/static/js/main.5338904f.js",
     "static/js/787.cf53e342.chunk.js": "/about-me/static/js/787.cf53e342.chunk.js",
     "static/media/springer1.png": "/about-me/static/media/springer1.9d71375657c17d29eda1.png",
+    "static/media/amfix.png": "/about-me/static/media/amfix.64a316d5e077abb7d07e.png",
     "static/media/auth0.png": "/about-me/static/media/auth0.4309657ed6b49ffe6d94.png",
     "static/media/me.png": "/about-me/static/media/me.d2ac74efb086763aaf99.png",
     "static/media/dbms.png": "/about-me/static/media/dbms.bd412d6e93656be5cd9e.png",
-    "static/media/amlong.png": "/about-me/static/media/amlong.45a6c522bc66254469b0.png",
     "static/media/calor.png": "/about-me/static/media/calor.3cbf633930d87ab68f64.png",
     "static/media/hp.png": "/about-me/static/media/hp.a2105756222a0cdaa1f9.png",
     "static/media/accuracy.png": "/about-me/static/media/accuracy.218d2972c95e8cd25cc2.png",
@@ -17,12 +17,12 @@
     "static/media/tcr.png": "/about-me/static/media/tcr.d430c5e3adbc79df14e0.png",
     "static/media/cs.jpeg": "/about-me/static/media/cs.a5e8bc8443ed4c6cbbd1.jpeg",
     "index.html": "/about-me/index.html",
-    "main.1a4ca843.css.map": "/about-me/static/css/main.1a4ca843.css.map",
-    "main.2620945b.js.map": "/about-me/static/js/main.2620945b.js.map",
+    "main.a6edaf75.css.map": "/about-me/static/css/main.a6edaf75.css.map",
+    "main.5338904f.js.map": "/about-me/static/js/main.5338904f.js.map",
     "787.cf53e342.chunk.js.map": "/about-me/static/js/787.cf53e342.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a4ca843.css",
-    "static/js/main.2620945b.js"
+    "static/css/main.a6edaf75.css",
+    "static/js/main.5338904f.js"
   ]
 }
