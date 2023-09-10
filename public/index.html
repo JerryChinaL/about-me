@@ -38,7 +38,7 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  <script>
+  <!-- <script>
     // Function to create rain effect
     function createRainEffect() {
       const canvas = document.getElementById('canvas');
@@ -110,7 +110,7 @@
 
     // Create rain effect when window is loaded
     window.addEventListener('load', createRainEffect);
-  </script>
+  </script> -->
 
   <script>
     // Function to create sun with rotating rays and flower leaf-like shapes
@@ -135,7 +135,7 @@
         // Draw circle
         ctx.beginPath();
         ctx.arc(centerX, centerY, radius - 15, 0, 2 * Math.PI);
-        ctx.fillStyle = 'rgb(250, 150, 0, 50)';
+        ctx.fillStyle = 'rgb(50, 150, 0, 50)';
         ctx.fill();
 
         // Draw rays
@@ -148,7 +148,7 @@
           const leafY = centerY + Math.sin(angle) * (radius + rayLength / 2.5);
           ctx.beginPath();
           ctx.arc(leafX, leafY, leafRadius, angle - Math.PI / 4, angle + Math.PI / 4);
-          ctx.fillStyle = 'orange';
+          ctx.fillStyle = 'black';
           ctx.fill();
           ctx.beginPath();
           ctx.arc(leafX, leafY, leafRadius, angle + Math.PI / 4, angle + 3 * Math.PI / 4);

@@ -19,7 +19,7 @@ function Projects() {
                     <h4>Email Networking System</h4>
                     </a>
                     <ul>
-                        <li>Addresses the problems that networking emails sent by popular email marketing tools often gets rejected by company servers.</li>
+                        <li>Addresses the problems that networking emails sent by popular marketing tools often gets rejected by company servers.</li>
                         <li>Designed React JS frontend and Express backend, incorporating MongoDB, Stripe APIs for data storage and payment processing.</li>
                     </ul>
                 </div>
