@@ -147,7 +147,7 @@ body {
   /* no background color */
   padding: 30px 50px;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: rgba(255, 255, 255, 0.95);
   z-index: 10;
 }
 
