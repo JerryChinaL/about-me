@@ -95,7 +95,7 @@ function Projects() {
             <ul>
                 <li>Project 1: IMC Trading Competition top 2.5%</li>
                 <li>Project 2: Citadel Securities Trading Challenge #1 (@uchicago)</li>
-                <li>Project 2: Backtesting of equity trading strategy @ CITIC Securities</li>
+                <li>Project 3: Backtesting of equity trading strategy @ CITIC Securities</li>
             </ul>
         </div>
     );
