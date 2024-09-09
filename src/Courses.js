@@ -12,9 +12,12 @@ const Courses = () => {
             <li>15400 Intro to Computer Systems</li>
             <li>27100 Discrete Math</li>
             <li>27200 Theory of Algorithms</li>
+            <li>23200 Intro to Computer Security</li>
+            <li>25040 Intro to Computer Vision</li>
             <li>23700 Intro to Computer Graphics</li>
             <li>23500 Intro to Database Systems</li>
             <li>31230 Fundamentals of Deep Learning</li>
+            <li></li>
           </ul>
         </div>
         <div className='course-container'>
@@ -25,6 +28,7 @@ const Courses = () => {
             <li>MUSC: Introduction to Western Art Music</li>
             <li>MUSC: Analysis and Criticism of Music</li>
             <lI>HIST: Russian Civilization: I-II</lI>
+            <li>BUSN 20100 Financial Accounting</li>
           </ul>
         </div>
         <div className='course-container'>
@@ -33,10 +37,23 @@ const Courses = () => {
             <li>MATH 16300 Honors Calculus I-III</li>
             <li>MATH 20500 Analysis in Rn I-III</li>
             <li>MATH 20250 Abstract Linear Algebra</li>
+            <li>MATH 24500 Abstract Algebra I-II</li>
+            <li>MATH 23500 Stochastic Processes</li>
             <li>STAT 22400 Applied Regression Analysis</li>
             <li>STAT 25100 Mathematical Probability</li>
             <li>STAT 24400 Statistical Theory and Methods I</li>
             <li>STAT 30900 Mathematical Computation I: Matrix Computation</li>
+          </ul>
+        </div>
+        <div className='course-container'>
+          <h3>Courses I was a Grader for:</h3>
+          <ul>
+            <li>CMSC 14300 Systems Programming I</li>
+            <li>CMSC 27100 Dicrete Math</li>
+            <li>STAT 24400 Statistical Theory and Methods I</li>
+            <li>MPCS 53111 Machine Learning</li>
+            <li>TTIC 31230 Deep Learning</li>
+            <li>$2400 each quarter : )</li>
           </ul>
         </div>
       </div>

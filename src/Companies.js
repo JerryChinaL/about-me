@@ -6,6 +6,7 @@ import springer from './img/springer.png';
 import zx from './img/zx.png';
 import cs from './img/cs.jpeg';
 import propaga from './img/propaga.jpeg';
+import denali from './img/denali.png';
 
 function CompaniesWorkedWith() {
 
@@ -32,6 +33,14 @@ function CompaniesWorkedWith() {
         <div className="CompaniesWorkedWith">
             <h1>Companies Worked With</h1>
             <div className="companies">
+                <div className="company-item">
+                    <a href="https://denaliadvisors.com/">
+                        <div className='companyhh'>
+                            <img src={denali} alt="Company 1" style={{ width: '100px', height: 'auto' }}/>
+                        </div>
+                        <p>Denali Advisors</p>
+                    </a>
+                </div>
                 <div className="company-item">
                     <a href="https://www.fnal.gov/">
                         <img src={fermi} alt="Company 1" />

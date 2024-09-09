@@ -25,6 +25,17 @@
     /* adjust as necessary */
 }
 
+.companyhh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100px;
+    /* adjust as necessary */
+    height: 100px;
+    /* adjust as necessary */
+}
+
 .company-item p {
     margin-top: 10px;
 }

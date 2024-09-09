@@ -7,6 +7,9 @@ import panda from './img/accuracy.png';
 import house from './img/hp.png';
 import calor from './img/calor.png';
 import auth0 from './img/auth0.png';
+import ff5 from './img/ff5.png';
+import llama from './img/llama.png';
+
 function Projects() {
     return (
         <div className="Projects">
@@ -16,7 +19,7 @@ function Projects() {
                 <div className="project-item">
                     <a href="https://alphamail.world">
                         <img src={am} alt="Project 1" />
-                    <h4>Email Networking System</h4>
+                        <h4>Email Networking System</h4>
                     </a>
                     <ul>
                         <li>Addresses the problems that networking emails sent by popular marketing tools often gets rejected by company servers.</li>
@@ -42,7 +45,7 @@ function Projects() {
                 <div className="project-item">
                     <a href="https://www.springer.capital">
                         <img src={springer} alt="Project 3" />
-                    <h4> Website for Springer Capital</h4>
+                        <h4> Website for Springer Capital</h4>
                     </a>
                     <ul>
                         <li>Developed entire  website for Springer Capital during internship with HTML/CSS and published to Godaddy domain.</li>
@@ -62,9 +65,30 @@ function Projects() {
             <h2>Science & Research</h2>
             <div className="software-projects">
                 <div className="project-item">
+
+                <div className='abox'><img src={llama} alt="Project 1" /> </div>
+                    <h4> LLM for Stock Return Prediction</h4>
+                    <ul>
+                        <li>Worked in Prof.Xiu's group at UChicago Booth.</li>
+                        <li>Used Large Language Models (LLM) to classify news sentiments and predict stock returns.</li>
+                        <li>Generated llama model vector embeddings, analyzed high dimensional data, and submitted many jobs on HPC Clusters.</li>
+                        <li>Wrote code to parallelize execution for CPU & GPU.</li>
+                    </ul>
+                </div>
+                <div className="project-item">
+                        <a href="https://github.com/JerryChinaL/Fama_French" >
+                        <div className='abox'><img src={ff5} alt="Project 1" /></div>
+                            <h4> Fama French Replication</h4></a>
+                    <ul>
+                        <li>Replicated Fama French and q-Factor models (along with their variants) with CRSP & Compustat data during my internship at Denali Advisors.</li>
+                        <li>Produced 5 tables for evaluation of the models, with output formatted to both Latex and Excel.</li>
+                        <li>Project's code available on Github.</li>
+                    </ul>
+                </div>
+                <div className="project-item">
                     <a href="https://github.com/JerryChinaL/Portfolio/blob/main/Adversarial%20Attack%20Paper.pdf">
                         <img src={calor} alt="Project 3" />
-                    <h4> Data Analysis of High-granularity Calorimeters @ Fermilab</h4></a>
+                        <h4> Data Analysis of High-granularity Calorimeters @ Fermilab</h4></a>
                     <ul>
                         <li>Worked with experimental particle physicists to improve calorimeter data analysis for future colliders.</li>
                         <li>Used gradient-boosted trees and neural networks to predict true particle distribution based on calorimeter detections, improving detector resolution by 50% compared to existing clustering method.</li>
@@ -74,7 +98,7 @@ function Projects() {
                 <div className="project-item">
                     <a href="https://github.com/JerryChinaL/Portfolio/blob/main/Adversarial%20Attack%20Paper.pdf">
                         <img src={panda} alt="Project 1" />
-                    <h4> Adversarial Training on CNN</h4></a>
+                        <h4> Adversarial Training on CNN</h4></a>
                     <ul>
                         <li>Researched performance of adversarial training on a CNN that identifies banknote images for visually impaired. Paper published in an ACM Journal.</li>
                         <li>Learned about different types of adversarial attacks & defense mechanisms that improve the model robustness against malicious adversarial attacks.</li>
@@ -83,7 +107,7 @@ function Projects() {
                 <div className="project-item">
                     <a href="https://github.com/JerryChinaL/Portfolio/blob/main/House_Price_paper.pdf">
                         <img src={house} alt="Project 1" />
-                    <h4>Kaggle House Price Prediction</h4>
+                        <h4>Kaggle House Price Prediction</h4>
                     </a>
                     <ul>
                         <li>Wrote detailed solution of using kernel ridge, gradient boosting, lasso, and other relevant algorithms to predict house prices, based on 50+ house features.</li>
