@@ -80,9 +80,9 @@ function Projects() {
                         <div className='abox'><img src={ff5} alt="Project 1" /></div>
                             <h4> Fama French Replication</h4></a>
                     <ul>
-                        <li>Replicated Fama French and q-Factor models (along with their variants) with CRSP & Compustat data during my internship at Denali Advisors.</li>
+                        <li>Replicated Fama French and q-Factor models (along with their variants) with CRSP & Compustat data as part of my work at Denali Advisors.</li>
                         <li>Produced 5 tables for evaluation of the models, with output formatted to both Latex and Excel.</li>
-                        <li>Project's code available on Github.</li>
+                        <li>Code available on Github.</li>
                     </ul>
                 </div>
                 <div className="project-item">
