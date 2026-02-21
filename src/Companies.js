@@ -1,4 +1,4 @@
-import {React, useEffect} from 'react';
+import { React, useEffect } from 'react';
 import './Companies.css';
 import fermi from './img/fermi.png';
 import tcr from './img/tcr.png';
@@ -7,81 +7,94 @@ import zx from './img/zx.png';
 import cs from './img/cs.jpeg';
 import propaga from './img/propaga.jpeg';
 import denali from './img/denali.png';
+import trex from './img/trex.png';
 
 function CompaniesWorkedWith() {
+  useEffect(() => {
+    if (typeof IntersectionObserver === 'undefined') {
+      return undefined;
+    }
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                } else {
-                    entry.target.classList.remove('visible');
-                }
-            });
-        });
+    const targets = document.querySelectorAll('.company-item');
+    if (!targets.length) {
+      return undefined;
+    }
 
-        const targets = document.querySelectorAll('.company-item');
-        targets.forEach(target => observer.observe(target));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    });
 
-        // Cleanup observer on component unmount
-        return () => targets.forEach(target => observer.unobserve(target));
-    }, []);
-    
+    targets.forEach((target) => observer.observe(target));
 
-    return (
-        <div className="CompaniesWorkedWith">
-            <h1>Companies Worked With</h1>
-            <div className="companies">
-                <div className="company-item">
-                    <a href="https://denaliadvisors.com/">
-                        <div className='companyhh'>
-                            <img src={denali} alt="Company 1" style={{ width: '100px', height: 'auto' }}/>
-                        </div>
-                        <p>Denali Advisors</p>
-                    </a>
-                </div>
-                <div className="company-item">
-                    <a href="https://www.fnal.gov/">
-                        <img src={fermi} alt="Company 1" />
-                        <p>Fermilab</p>
-                    </a>
-                </div>
-                <div className="company-item">
-                    <a href="http://www.cs.ecitic.com/newsite/en/">
-                        <img src={zx} alt="Company 2" />
-                        <p>CITIC Securities</p>
-                    </a>
-                </div>
-                <div className="company-item">
-                    <a href="https://cs.uchicago.edu/">
-                        <img src={cs} alt="Company 3" />
-                        <p>UChicago CS</p>
-                    </a>
-                </div>
+    return () => targets.forEach((target) => observer.unobserve(target));
+  }, []);
 
-                <div className="company-item">
-                    <a href="https://propaga.mx/">
-                        <img src={propaga} alt="Company 4" />
-                        <p>Propaga</p>
-                    </a>
-                </div>
-                <div className="company-item">
-                    <a href="https://www.tcrinc.com/">
-                        <img src={tcr} alt="Company 5" />
-                        <p>TCR</p>
-                    </a>
-                </div>
-
-                <div className="company-item">
-                    <a href="https://www.springer.capital/">
-                        <img src={springer} alt="Company 6" />
-                        <p>Springer Capital</p>
-                    </a>
-                </div>
+  return (
+    <div className="CompaniesWorkedWith">
+      <h1>Companies Worked With</h1>
+      <div className="companies">
+        <div className="company-item">
+          <a href="https://www.trexquant.com/">
+            <div className='companyhh'>
+              <img src={trex} alt="Trexquant" className="trex-logo" />
             </div>
+            <p>Trexquant</p>
+          </a>
         </div>
-    );
+        <div className="company-item">
+          <a href="https://denaliadvisors.com/">
+            <div className='companyhh'>
+              <img src={denali} alt="Denali Advisors" style={{ width: '100px', height: 'auto' }} />
+            </div>
+            <p>Denali Advisors</p>
+          </a>
+        </div>
+        <div className="company-item">
+          <a href="https://www.fnal.gov/">
+            <img src={fermi} alt="Fermilab" />
+            <p>Fermilab</p>
+          </a>
+        </div>
+        <div className="company-item">
+          <a href="http://www.cs.ecitic.com/newsite/en/">
+            <img src={zx} alt="CITIC Securities" />
+            <p>CITIC Securities</p>
+          </a>
+        </div>
+        <div className="company-item">
+          <a href="https://cs.uchicago.edu/">
+            <img src={cs} alt="UChicago CS" />
+            <p>UChicago CS</p>
+          </a>
+        </div>
+        <div className="company-item">
+          <a href="https://propaga.mx/">
+            <img src={propaga} alt="Propaga" />
+            <p>Propaga</p>
+          </a>
+        </div>
+        <div className="company-item">
+          <a href="https://www.tcrinc.com/">
+            <img src={tcr} alt="TCR" />
+            <p>TCR</p>
+          </a>
+        </div>
+        <div className="company-item">
+          <a href="https://www.springer.capital/">
+            <img src={springer} alt="Springer Capital" />
+            <p>Springer Capital</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default CompaniesWorkedWith;
+

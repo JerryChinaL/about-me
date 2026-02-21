@@ -4,8 +4,20 @@ import './Courses.css';
 const Courses = () => {
   return (
     <div className='Courses'>
-      <h1>Courses Taken</h1>
+      <h1>Courses</h1>
       <div className='course-section-divider'>
+        <div className='course-container'>
+          <h3>MIT MFin (Current):</h3>
+          <ul>
+            <li>Options and Futures</li>
+            <li>Fixed Income Securities and Derivatives</li>
+            <li>Alphanomics</li>
+            <li>Quantitative Investment</li>
+            <li>Discrete Probability and Stochastic Processes</li>
+            <li>Financial Markets</li>
+            <li>Advanced Analytics for Finance</li>
+          </ul>
+        </div>
         <div className='course-container'>
           <h3>Computer Science (CMSC):</h3>
           <ul>
@@ -17,7 +29,6 @@ const Courses = () => {
             <li>23700 Intro to Computer Graphics</li>
             <li>23500 Intro to Database Systems</li>
             <li>31230 Fundamentals of Deep Learning</li>
-            <li></li>
           </ul>
         </div>
         <div className='course-container'>
@@ -27,7 +38,7 @@ const Courses = () => {
             <li>HUMA: Readings in World Literature I-II</li>
             <li>MUSC: Introduction to Western Art Music</li>
             <li>MUSC: Analysis and Criticism of Music</li>
-            <lI>HIST: Russian Civilization: I-II</lI>
+            <li>HIST: Russian Civilization: I-II</li>
             <li>BUSN 20100 Financial Accounting</li>
           </ul>
         </div>
@@ -46,21 +57,20 @@ const Courses = () => {
           </ul>
         </div>
         <div className='course-container'>
-          <h3>Courses I was a Grader for:</h3>
+          <h3>Courses I Was a Grader For:</h3>
           <ul>
             <li>CMSC 14300 Systems Programming I</li>
-            <li>CMSC 27100 Dicrete Math</li>
+            <li>CMSC 27100 Discrete Math</li>
             <li>STAT 24400 Statistical Theory and Methods I</li>
             <li>MPCS 53111 Machine Learning</li>
             <li>TTIC 31230 Deep Learning</li>
-            <li>$2400 each quarter : )</li>
           </ul>
         </div>
       </div>
       <div className='course-container-etc'>
         <h3>etc ...</h3>
       </div>
-    </div >
+    </div>
   );
 };
 
